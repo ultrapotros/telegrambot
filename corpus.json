@@ -1,0 +1,30 @@
+{
+    "name": "Spanish Text",
+    "locale": "es-ES",
+    "data": [
+        {
+            "intent": "greetings",
+            "utterances": [
+                "hola",
+                "buenos",
+                "buen",
+                "buenas"
+            ],
+            "answers": [
+                "Hola"
+            ]
+        },
+        {
+            "intent": "byes",
+            "utterances": [
+                "adios",
+                "hasta luego",
+                "bye",
+                "nos vemos"
+            ],
+            "answers": [
+                "hasta pronto"
+            ]
+        }
+    ]
+}
