@@ -13,6 +13,10 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 app.use(bot.webhookCallback('/url/telegram'));
 bot.telegram.setWebhook(`${process.env.BOT_URL}/url/telegram`);
 
+app.use('customurl', (req,res)=>{
+    res.json({"bot":"mybot"})
+})
+
 app.post('/url/telegram', (req, res)=> {
 
     res.send('termina');
