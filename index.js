@@ -7,15 +7,8 @@ require('dotenv').config();
 const app = express();
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-// bot info santi_mezquita_bot
-// username ultrapotros_bot
-
 app.use(bot.webhookCallback('/url/telegram'));
 bot.telegram.setWebhook(`${process.env.BOT_URL}/url/telegram`);
-
-app.get('customurl', (req,res)=>{
-    res.json({"bot":"mybot"})
-})
 
 app.post('/url/telegram', (req, res)=> {
 
